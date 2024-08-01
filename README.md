@@ -6,6 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+### Running API server
+
+Navigate to folder [api-server] there make sure to run:
+
+1. `npm install` to run all the dependencies
+2. `npm start` to run the server, navigato to `http://localhost:8082/api/products` to see the list of products
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
