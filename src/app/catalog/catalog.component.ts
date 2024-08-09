@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IProduct } from './product.model';
-import { CartService } from '../cart.service';
+import { CartService } from '../cart/cart.service';
 import { ProductService } from './product.service';
 
 @Component({
@@ -25,9 +25,10 @@ export class CatalogComponent {
     this.productSvc.getProducts().subscribe((products) => {
       this.products = products;
     });
-    // when dealing with https calls that retun obersables,
-    // you must subscribe tp the http call, and when youdo that
-    // actually executes the HTTP call
+    // When dealing with https calls that retun obersables,
+    // You must subscribe to the http call, and when you do that
+    // Actually executes the HTTP call
+    // Calling the method doesnt do it, since it retuens an observable, you needs to subscribe to it
   }
 
   addToCart(product: IProduct) {
